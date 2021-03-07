@@ -1,0 +1,44 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Better vscode browser",
+  "description": "A nicer vscode directory opener",
+  "developer_name": "Esmaeel Zekaee",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "cb_kw",
+      "type": "keyword",
+      "name": "File browser shortcut",
+      "description": "",
+      "default_value": "c"
+    },
+    {
+      "id": "cb_default_path",
+      "type": "input",
+      "name": "Default path",
+      "description": "The vscode browser will always start positioned in this path.",
+      "default_value": "~"
+    },
+    {
+      "id": "cb_items_limit",
+      "type": "input",
+      "name": "Items limit",
+      "description": "The vscode browser will show up to this number of items in the list. Leave empty for no limit.",
+      "default_value": ""
+    },
+    {
+      "id": "cb_show_hidden",
+      "type": "select",
+      "name": "Show hidden files",
+      "description": "Show hidden files in the list (files and folders with names starting in '.')",
+      "default_value": "No",
+      "options": [
+        {"value": "Yes", "text": "Yes"},
+        {"value": "No", "text": "No"}
+      ]
+    }
+  ]
+}
