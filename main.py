@@ -138,8 +138,7 @@ class KeywordQueryEventListener(EventListener):
             item = ExtensionResultItem(
                 icon=get_icon_for_file(current_path),
                 name="[ Open folder in external file browser ]",
-                on_enter=LaunchAppAction(str(current_path)),
-
+                on_enter=OpenAction("vscode")
             )
             items.append(item)
 
